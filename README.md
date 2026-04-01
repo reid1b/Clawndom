@@ -46,7 +46,7 @@ clawndom config enabled true       # re-enable
 - **No typosquatting detection** — Doesn't catch `expresss` as a typosquat of `express`.
 - **No dependency confusion** — Checks the named package, not private registry hijacking.
 - **No code analysis** — Doesn't inspect what the package does. A clean record doesn't mean safe code.
-- **Fail-open by default** — If OSV.dev is unreachable, installs proceed.
+- **Fail-closed** — If OSV.dev is unreachable, installs are blocked. Run `clawndom config enabled false` to temporarily disable if needed.
 
 For deeper protection, consider [Socket.dev](https://socket.dev/). clawndom is not affiliated with Socket.dev or OSV.dev.
 
