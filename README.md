@@ -2,8 +2,6 @@
 
 Security hook for Claude Code. Checks every package your agent installs against the [OSV.dev](https://osv.dev/) vulnerability database. Clean packages pass through. Packages with known vulnerabilities get blocked.
 
-[Website](https://clawndom-web.vercel.app) · [npm](https://www.npmjs.com/package/clawndom)
-
 Zero dependencies. Uses only Node.js built-ins.
 
 ## Setup
