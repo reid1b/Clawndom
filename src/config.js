@@ -1,4 +1,4 @@
-// Configuration management for clawndom.
+// Configuration management for Clawndom.
 // Stores config in ~/.clawndom/config.json.
 
 'use strict';

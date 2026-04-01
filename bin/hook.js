@@ -149,7 +149,7 @@ async function main() {
       hookEventName: 'PreToolUse',
       permissionDecision: 'deny',
       permissionDecisionReason:
-        `🦞 clawndom blocked this install:\n\n${issues.join('\n\n')}\n\n${guidance}`,
+        `🦞 Clawndom blocked this install:\n\n${issues.join('\n\n')}\n\n${guidance}`,
     },
   };
 

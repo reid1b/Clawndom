@@ -1,4 +1,4 @@
-# clawndom
+# Clawndom
 
 Security hook for Claude Code. Checks every package your agent installs against the [OSV.dev](https://osv.dev/) vulnerability database. Clean packages pass through. Packages with known vulnerabilities get blocked.
 
@@ -13,13 +13,13 @@ clawndom init
 
 Done. The hook is active for all future Claude Code sessions.
 
-`init` adds a PreToolUse hook to `~/.claude/settings.json`. This tells Claude Code to run clawndom before every Bash command. clawndom checks if the command installs packages — if it does, each package is verified against OSV.dev before the command executes.
+`init` adds a PreToolUse hook to `~/.claude/settings.json`. This tells Claude Code to run Clawndom before every Bash command. Clawndom checks if the command installs packages — if it does, each package is verified against OSV.dev before the command executes.
 
 No other files are modified. The allowlist and config are stored in `~/.clawndom/`.
 
 ## When a package gets blocked
 
-clawndom tells the agent why. If you've reviewed the package and it's fine:
+Clawndom tells the agent why. If you've reviewed the package and it's fine:
 
 ```bash
 clawndom allow <package>           # allow all versions
@@ -48,7 +48,7 @@ clawndom config enabled true       # re-enable
 - **No code analysis** — Doesn't inspect what the package does. A clean record doesn't mean safe code.
 - **Fail-closed** — If OSV.dev is unreachable, installs are blocked. Run `clawndom config enabled false` to temporarily disable if needed.
 
-For deeper protection, consider [Socket.dev](https://socket.dev/). clawndom is not affiliated with Socket.dev or OSV.dev.
+For deeper protection, consider [Socket.dev](https://socket.dev/). Clawndom is not affiliated with Socket.dev or OSV.dev.
 
 ## Uninstall
 
@@ -57,7 +57,7 @@ clawndom uninstall
 npm uninstall -g clawndom
 ```
 
-`clawndom uninstall` removes the hook from `~/.claude/settings.json` and deletes `~/.clawndom/` (allowlist and config). Then `npm uninstall -g` removes the package itself. Clean uninstall, nothing left behind.
+`clawndom uninstall` removes the hook from `~/.claude/settings.json` and deletes `~/.clawndom/` (allowlist and config). Then `npm uninstall -g` removes the package. Clean uninstall, nothing left behind.
 
 ## Requirements
 

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-// npm preuninstall hook — removes clawndom from Claude Code settings and cleans up data.
+// npm preuninstall hook — removes Clawndom from Claude Code settings and cleans up data.
 
 const fs = require('fs');
 const path = require('path');

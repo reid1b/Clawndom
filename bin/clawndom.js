@@ -29,7 +29,7 @@ for (let i = 0; i < args.length; i++) {
 
 if (flags.help || subcommand === 'help') {
   console.log(`
-clawndom — Use AI agents at full speed. Safely.
+Clawndom — Use AI agents at full speed. Safely.
 
 Commands:
   clawndom init                    Set up the hook for Claude Code
