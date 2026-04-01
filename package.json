@@ -1,0 +1,38 @@
+{
+  "name": "clawndom",
+  "version": "1.0.0",
+  "description": "Security hook for Claude Code. Checks packages against known vulnerabilities before install.",
+  "keywords": [
+    "claude-code",
+    "security",
+    "vulnerability",
+    "osv",
+    "npm",
+    "hook"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reid1b/clawndom.git"
+  },
+  "homepage": "https://github.com/reid1b/clawndom#readme",
+  "bugs": {
+    "url": "https://github.com/reid1b/clawndom/issues"
+  },
+  "bin": {
+    "clawndom": "./bin/clawndom.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node --test 'test/*.test.js'",
+    "preuninstall": "node bin/uninstall.js"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
