@@ -14,7 +14,7 @@
     "type": "git",
     "url": "git+https://github.com/reid1b/clawndom.git"
   },
-  "homepage": "https://github.com/reid1b/clawndom#readme",
+  "homepage": "https://clawndom-web.vercel.app",
   "bugs": {
     "url": "https://github.com/reid1b/clawndom/issues"
   },
