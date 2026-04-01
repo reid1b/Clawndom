@@ -19,7 +19,7 @@
     "url": "https://github.com/reid1b/clawndom/issues"
   },
   "bin": {
-    "clawndom": "./bin/clawndom.js"
+    "clawndom": "bin/clawndom.js"
   },
   "files": [
     "bin",
